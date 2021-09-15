@@ -1,0 +1,302 @@
+/* 
+notes 
+the css file full of duplicte code 
+which is not a good if we need to 
+manpulating and trace oure code so its not 
+good in term of sturuture our file 
+i wii refactor my code and make 
+reusapal commpenent 
+" you will catch the duplicte code just after section one "
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.nav .log{
+    width:100px;
+}
+.nav .log img{
+    width: 100%;
+    cursor: pointer;
+}
+.nav .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav .links li a{
+    margin-left: 25px;
+    color: red;
+}
+/* Strat the services-section */
+.services-section{
+    background-color: #7b9dfe;
+}
+.services{
+    padding: 50px;
+    font-size: 50px;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+/* End the services-section */
+
+/* Start the offerd section */
+.offerd{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 10px;
+
+}
+.offerd header{
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+}
+.offerd header h2{
+    text-align: center;
+    font-size: 35px;
+}
+.offerd article{
+    display: flex;
+    justify-content: center;
+}
+.offerd article p{
+    font-size: 12px;
+    max-width: 60%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+.offerd .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.offerd .cards .card{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.offerd .cards .card header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.offerd .cards .card figure{
+    font-size: x-large;
+}
+
+
+.offerd .cards .card header p{
+    font-size: 13px;
+    margin-top: 10px;
+    color: #666;
+}
+/* End the offerd section */
+
+
+/* Strat the counter section */
+.counter-section{
+    background-color: #7b9dfe;
+    padding: 50px;
+}
+.counter{
+    padding: 50px;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+
+}
+.counter header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+.counter header section{
+    text-align: center;
+}
+/* End the counter section */
+
+/* Start the Plan section */
+.plan{
+    padding: 50px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.plan header{
+    margin-bottom: 2rem;
+}
+.plan header h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.plan article{
+    display: flex;
+    justify-content: center;
+}
+
+.plan article p{
+    font-size: 12px;
+    max-width: 60%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.plan .plan_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 1.5rem;
+    background-color: #e5e5ee;
+    padding: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.plan .plan_cards .card{
+    text-align: center;
+}
+.plan .plan_cards .card .outer-cricle{
+    border-radius: 50%;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.plan .plan_cards .card header h3{
+    margin-bottom: 2px;
+}
+.plan .plan_cards .card header p{
+    font-size: 10px;
+    color: #666;
+}
+.plan .plan_cards .card article p{
+    color: #666;
+    line-height: 2;
+}
+
+.plan .plan_cards .card .price{
+    font-size: 30px;
+}
+/* End the Plan section */
+
+/* Start about me section */
+/* Start the Plan section */
+.feedbackSection{
+    background-color: #e5e5ee;
+}
+.about-me{
+    padding: 50px;
+    margin-top: 3rem;
+}
+.about-me header{
+    margin-bottom: 2rem;
+    
+}
+.about-me header h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.about-me article{
+    display: flex;
+    justify-content: center;
+}
+
+.about-me article p{
+    font-size: 12px;
+    max-width: 60%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.about-me .feedback{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 100px;
+    
+}
+.about-me .feedback .card{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+.about-me .feedback .card figure{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.about-me .feedback .card figure img{
+    width:80px;
+    border-radius: 10px;
+
+}
+.about-me .feedback .card article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* End about me section */
+
+/* Strat the footer */
+footer{
+    background-color: #04091d;
+    color: white;
+}
+footer .grid-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    gap: 50px;
+}
+
+footer .grid-footer article .info-1{
+    margin-bottom: 10px;
+}
+footer .grid-footer article .info-2{
+    margin-bottom: 10px;
+    color: #666;
+}
+footer .grid-footer section .info-2{
+    margin-bottom: 10px;
+    color: #666;
+}
+footer .grid-footer section input{
+    padding: 10px;
+    outline: none;
+    color: black;
+    border-radius: 5px; 
+    border: none;
+}
+
+footer .grid-footer section .social{
+    display: flex;
+}
+footer .grid-footer section .social li{
+    margin-right: 20px;
+}
+footer .grid-footer section .social li a{
+color: white;
+}
+
+/* End the footer */
